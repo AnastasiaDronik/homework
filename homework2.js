@@ -1,18 +1,20 @@
 let input = prompt('Скільки вам років?', "Введіть ваш вік");
 let age = +input;
-if (age >= 0) { 
-    if (age === 11 || age === 12 || age === 14) {
-    alert(" " + age + ' років')
+if (input === null) {
+    alert("Введіть ваш вік!");
+} 
+else if (age >= 0) { 
+    if (age === 11 || age === 12 || age === 13 || age === 14) {
+        alert("Вам " + age + ' років.')
     }
     else if (age % 10 === 1) {
-        alert("тобі " + age + ' років')
-        ("тобі " + age + ' рік')
+        alert("Вам " + age + ' рік.')
     }
     else if (age % 10 === 2 || age % 10 === 3|| age % 10 === 4) {
-        alert("тобі " + age + ' роки')
+        alert("Вам " + age + ' роки.')
     }
     else {
-        alert("тобі " + age + ' років')
+        alert("Вам " + age + ' років.')
     };
 }
 else {
