@@ -11,4 +11,4 @@ result = result*x
     console.log(result);
 }
 
-pow(3, 5)
+pow(3, 5);
