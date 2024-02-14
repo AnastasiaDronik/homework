@@ -1,0 +1,25 @@
+//ЗАВДАННЯ 1 варіант 1
+
+
+function drawtriangles(rows, symbol) {
+    let str = "";
+for (i=0; i<rows; i++) {
+    str += symbol.toString();
+    console.log (str);
+}
+}
+drawtriangles(5, "*");
+
+//ЗАВДАННЯ 1 варіант 2
+
+function drawtriangles2(rows, symbol) {
+    let str = "";
+    let i = 1;
+while (i <= rows) {
+    str += symbol.toString();
+    console.log (str);
+    i++;
+}
+}
+
+drawtriangles2(12, 1);
