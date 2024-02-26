@@ -2,7 +2,7 @@ var arr = [
   {
     userName: "Test",
     lastName: "Test",
-    email: "test..test@gmail.com",
+    email: "test.test@gmail.com",
   },
   {
     userName: "Dmitro",
@@ -18,12 +18,11 @@ var arr = [
 
 let emailArray = [];
 
-let regex = /([a-z0-9]*\.?[a-z0-9]*)(@gmail|@yahoo)\.com/;
+let regex = /^[a-zA-Z0-9]*\.?[a-zA-Z0-9]+(@gmail|@yahoo)\.com/;
 
 function checkEmail(array, regex, newArray) {
   for (let i in array) {
     if (regex.test(array[i].email) === true) {
-      console.log(array[i].email + " is a good email!!!");
       newArray.push(array[i].email)
     }
   }
